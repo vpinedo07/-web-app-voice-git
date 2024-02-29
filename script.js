@@ -3,7 +3,8 @@ if ("webkitSpeechRecognition" in window) {
   const recognition = new webkitSpeechRecognition();
   const resultDiv = document.getElementById("result");
 
-  recognition.lang = "es-ES"; // Establecer el idioma de reconocimiento de voz
+  // Establecer el idioma de reconocimiento de voz
+  recognition.lang = "es-ES";
 
   // Evento cuando la voz es detectada
   recognition.onresult = function (event) {
